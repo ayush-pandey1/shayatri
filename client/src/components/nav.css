@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+:root{
+    --clr : #0EC54E;
+}
+
+.mobile li.active a .icon
+{
+    border-top: 7px solid #0EC54E;
+    
+    
+    color: var(--clr);
+
+    
+    /* transform: translateY(-27px); */
+}
+/* .mobile li a .icon::before
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr);
+    border-radius: 50%;
+    filter: blur(5px);
+    opacity: 0;
+} */
+.mobile li.active a .icon::before
+{
+    opacity: 0.5;
+}
+/* .indicator::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -28px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 15px 18px white;
+}
+.indicator::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -28px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: -15px 18px white;
+} */
+/* .mobile ul li:nth-child(1).active ~ .indicator
+{
+    transform: translateX(calc(70px * 0));
+}
+
+.mobile ul li:nth-child(2).active ~ .indicator
+{
+    transform: translateX(calc(32vw * 1));
+}
+.mobile ul li:nth-child(3).active ~ .indicator
+{
+    transform: translateX(calc(4.95rem * 3));
+} */
+/* @media (min-width:650vw) {
+    .mobile ul li:nth-child(2).active ~ .indicator
+{
+    transform: translateX(calc(17% * 1));
+}
+} */

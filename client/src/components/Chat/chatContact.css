@@ -1,0 +1,11 @@
+@media (width<=768px) {
+    #contactId {
+        z-index: 1;
+        /* border: 3px solid green; */
+    }
+
+    #chatId {
+        z-index: 0;
+        /* border: 3px solid green; */
+    }
+}

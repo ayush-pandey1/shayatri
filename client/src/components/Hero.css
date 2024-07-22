@@ -1,0 +1,12 @@
+@keyframes topdown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-7px);
+    }
+  }
+  
+  .animate-topdown {
+    animation: topdown 1.5s ease-in-out infinite alternate;
+  }

@@ -1,0 +1,30 @@
+.animate-icon
+{
+    transition: all ease-in-out ;
+    animation-name: animate-icon;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes animate-icon {
+    0%
+    {
+        filter: saturate(1);
+    }
+    25%
+    {
+        filter: saturate(1.5);
+    }
+    50%
+    {
+        filter: saturate(2);
+    }
+    75%
+    {
+        filter: saturate(1.5);
+    }
+    100%
+    {
+        filter: saturate(1);
+    }
+    
+}

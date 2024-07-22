@@ -1,0 +1,44 @@
+.preloader{
+    height: 100vh;
+    width: 100%;
+    background: #16113A;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.preloader .texts-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 280px;
+    font-size: 20px;
+    font-weight: 800;
+    overflow: hidden;
+}
+.word
+{
+    animation-name: animate-logo  ;
+    animation-duration: 2s ;
+    animation-iteration-count: 1;
+}
+@keyframes animate-logo {
+    0%
+    {
+        transform: translateY(-50%);
+    }
+    50%
+    {
+        transform: translateY(-25%);
+    }
+    100%
+    {
+        transform: translateY(0%);
+    }
+}
