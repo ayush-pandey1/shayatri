@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const host = "http://localhost:8080";
+const host = "https://shayatri-backend.onrender.com";
 export const signUpRoute=`${host}/api/auth/signUp`;
 export const loginRoute = `${host}/api/auth/login`;
 export const setAvatarRoute = `${host}/api/auth/avatar`;
@@ -12,7 +12,7 @@ export const logoutRoute = `${host}/api/auth/logout`;
 // export const logoutRoute = `${host}/api/auth/logout`;
 
 
-const API = axios.create({baseURL:'http://localhost:8080'});
+const API = axios.create({baseURL:'https://shayatri-backend.onrender.com'});
 export const createChat = (senderId,receiverId)=> API.post('/chat',  senderId , receiverId );  // 
 export const userChats=(id)=>API.get(`/chat/${id}`)
 export const getUser=(userId)=>API.get(`/user/${userId}`)
