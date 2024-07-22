@@ -53,7 +53,7 @@ function App() {
     if(user!==null){
     // console.log("6");
     if (user && user?._id) {
-      socket.current = io('http://localhost:8800');
+      socket.current = io('https://shayatri-socket.onrender.com');
       socket.current.emit("new-user-add", user._id);
       socket.current?.on('get-users', (users) => {
         setOnlineUsers(users);
