@@ -44,14 +44,14 @@ export const Team = () => {
                   Ayush Pandey
                 </div>
                 <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">
-                  Frontend Dev
+
                 </p>
 
                 {/* <!-- social - start --> */}
                 <div class="flex justify-center">
                   <div class="flex gap-4">
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/ayush-pandey1/"
                       target="_blank"
                       class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
                     >
@@ -106,14 +106,14 @@ export const Team = () => {
                   Suraj
                 </div>
                 <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">
-                  Backend Dev
+                  
                 </p>
 
                 {/* <!-- social - start --> */}
                 <div class="flex justify-center">
                   <div class="flex gap-4">
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/suraj-singh-2964b4262/"
                       target="_blank"
                       class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
                     >
