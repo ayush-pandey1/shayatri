@@ -24,8 +24,9 @@ export const Team = () => {
             </p>
           </div>
           {/* <!-- text - end --> */}
+// <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-8">
 
-          <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-8">
+          <div class="  gap-4 lg:gap-8">
        
 
             {/* <!-- person 2 - start --> */}
