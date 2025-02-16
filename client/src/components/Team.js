@@ -8,10 +8,11 @@ export const Team = () => {
 
   return (
     <><div></div>
-    /*
+     /* remove this comment
       <div class="bg-accent py-6 sm:py-8 lg:py-12 drop-shadow-2xl">
         <div class="mx-auto max-w-screen-xl px-4 md:px-8">
           {/* <!-- text - start --> */}
+  /* remove this comment
           <div class="mb-10 md:mb-16">
             <h2 class="mb-4 text-center text-2xl font-bold text-primary-color md:mb-6 lg:text-3xl">
               Meet our Team
@@ -27,11 +28,13 @@ export const Team = () => {
           {/* <!-- text - end --> */}
 {/*<div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-8">*/}
 
+/* remove this comment
           <div class="  gap-4 lg:gap-8">
        
 
             {/* <!-- person 2 - start --> */}
-            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-4 hover:scale-105 hover:drop-shadow-2xl transition-all ease-in-out border-b-[6px] border-primary-color">
+/* remove this comment          
+<div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-4 hover:scale-105 hover:drop-shadow-2xl transition-all ease-in-out border-b-[6px] border-primary-color">
               <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32 outline outline-3  outline-primary-color outline-offset-2">
                 <img
                   src="avt2.png"
@@ -50,7 +53,8 @@ export const Team = () => {
                 </p>
 
                 {/* <!-- social - start --> */}
-                <div class="flex justify-center">
+/* remove this comment             
+<div class="flex justify-center">
                   <div class="flex gap-4">
                     <a
                       href="https://www.linkedin.com/in/manannarwal"
@@ -88,12 +92,14 @@ export const Team = () => {
                   </div>
                 </div>
                 {/* <!-- social - end --> */}
-              </div>
+/* remove this comment            
+</div>
             </div>
             {/* <!-- person - end --> */}
 
             {/* <!-- person - start --> */}
-            <div class="hidden flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-4 hover:scale-105 hover:drop-shadow-2xl transition-all ease-in-out border-b-[6px] border-primary-color">
+/* remove this comment           
+<div class="hidden flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-4 hover:scale-105 hover:drop-shadow-2xl transition-all ease-in-out border-b-[6px] border-primary-color">
               <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32 outline outline-3  outline-primary-color outline-offset-2">
                 <img
                   src="avt8.png"
@@ -112,7 +118,8 @@ export const Team = () => {
                 </p>
 
                 {/* <!-- social - start --> */}
-                <div class="flex justify-center">
+/* remove this comment                
+<div class="flex justify-center">
                   <div class="flex gap-4">
                     <a
                       href="https://www.linkedin.com/in/suraj-singh-2964b4262/"
@@ -150,19 +157,22 @@ export const Team = () => {
                   </div>
                 </div>
                 {/* <!-- social - end --> */}
-              </div>
+/* remove this comment              
+</div>
             </div>
             {/* <!-- person - end --> */}
 
             {/* <!-- person - start --> */}
             
             {/* <!-- person - end --> */}
-          </div>
+/* remove this comment          
+</div>
         </div>  
       </div>
 
       {/* ----------------------------------------------------------------- */}
-      <div class="bg-secondary-color py-6 sm:py-8 lg:py-12 drop-shadow-sm ">
+/* remove this comment      
+<div class="bg-secondary-color py-6 sm:py-8 lg:py-12 drop-shadow-sm ">
         <div class="mx-auto max-w-screen-2xl px-4 md:px-8 ">
           <div class="flex flex-col items-center justify-between gap-4 rounded-lg bg-gray-100 p-4 sm:flex-row md:p-8 shadow-primary-color shadow-md">
             <div className="flex flex-col items-center md:items-start">
