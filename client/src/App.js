@@ -84,7 +84,7 @@ function App() {
                 <Hero /> 
                 <Particle/>
                 <Features/>
-                <Team/>
+        {/* <Team/>  */}
                 <FaqsCard/>
                 <Footer/>
                 </>} >
