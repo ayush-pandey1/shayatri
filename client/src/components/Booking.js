@@ -16,7 +16,8 @@ export const Booking = () => {
   const [nearData, setNearData] = useState([]);
 
   // const apiKey = '8ea653b364ac40b88c00fc4708d75c22'; // Replace with your OpenCage Geocode API key
-  const apiKey = 'c772b66d770f46b7b8b32e5ef0fd6767';
+  const apiKey = 'af6568ed15b84753b5466384264d86ab';
+  //const apiKey = 'c772b66d770f46b7b8b32e5ef0fd6767';
   // const apiKey = 'fe2e7cd823b8479cbb894866314d3b4e';
 // 
 
