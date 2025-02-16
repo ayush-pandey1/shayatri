@@ -13,7 +13,9 @@ import { ForgetPass } from './components/ForgetPass';
 import { Navbar } from './components/Navbar';
 // import { Banner } from './components/Banner';
 import { Particle } from './components/Particle';
+/*
 import { Team } from './components/Team';
+*/
 import { Contact } from './components/Contact';
 import { Booking } from './components/Booking';
 import { Signup } from './components/Signup';
@@ -82,7 +84,7 @@ function App() {
                 <Hero /> 
                 <Particle/>
                 <Features/>
-                <Team/>
+                /*<Team/>*/
                 <FaqsCard/>
                 <Footer/>
                 </>} >
