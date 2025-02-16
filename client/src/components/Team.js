@@ -91,7 +91,7 @@ export const Team = () => {
             {/* <!-- person - end --> */}
 
             {/* <!-- person - start --> */}
-            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-4 hover:scale-105 hover:drop-shadow-2xl transition-all ease-in-out border-b-[6px] border-primary-color">
+            <div class="hidden flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-4 hover:scale-105 hover:drop-shadow-2xl transition-all ease-in-out border-b-[6px] border-primary-color">
               <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32 outline outline-3  outline-primary-color outline-offset-2">
                 <img
                   src="avt8.png"
