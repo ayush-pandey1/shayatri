@@ -14,7 +14,7 @@ import { Navbar } from './components/Navbar';
 // import { Banner } from './components/Banner';
 import { Particle } from './components/Particle';
 
-//import { Team } from './components/Team';
+import { Team } from './components/Team';
 
 import { Contact } from './components/Contact';
 import { Booking } from './components/Booking';
@@ -84,7 +84,7 @@ function App() {
                 <Hero /> 
                 <Particle/>
                 <Features/>
-              //  <Team/>
+                <Team/>
                 <FaqsCard/>
                 <Footer/>
                 </>} >
