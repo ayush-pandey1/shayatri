@@ -41,7 +41,7 @@ export const Team = () => {
 
               <div>
                 <div class="text-center font-bold text-primary-color md:text-lg">
-                  Ayush Pandey
+                  Manan Narwal
                 </div>
                 <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">
 
@@ -51,7 +51,7 @@ export const Team = () => {
                 <div class="flex justify-center">
                   <div class="flex gap-4">
                     <a
-                      href="https://www.linkedin.com/in/ayush-pandey1/"
+                      href="https://www.linkedin.com/in/manannarwal"
                       target="_blank"
                       class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
                     >
@@ -101,7 +101,7 @@ export const Team = () => {
                 />
               </div>
 
-              <div>
+              <div class="hidden">
                 <div class="text-center font-bold text-primary-color md:text-lg">
                   Suraj
                 </div>
