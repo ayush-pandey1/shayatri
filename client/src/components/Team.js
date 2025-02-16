@@ -7,7 +7,8 @@ export const Team = () => {
 
 
   return (
-    <>
+    <><div></div>
+    /*
       <div class="bg-accent py-6 sm:py-8 lg:py-12 drop-shadow-2xl">
         <div class="mx-auto max-w-screen-xl px-4 md:px-8">
           {/* <!-- text - start --> */}
@@ -179,7 +180,7 @@ export const Team = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */
     </>
   );
 };
