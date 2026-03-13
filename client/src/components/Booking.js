@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios'; // Import Axios
 import Axios from 'axios'; // Import Axios
 import './booking.css';
@@ -14,6 +14,9 @@ export const Booking = () => {
   const [originCoordinates, setOriginCoordinates] = useState(null); // Coordinates for Origin
   const [destinationCoordinates, setDestinationCoordinates] = useState(null); // Coordinates for Destination
   const [nearData, setNearData] = useState([]);
+  const originSuggestionsDebounceRef = useRef(null);
+  const destinationSuggestionsDebounceRef = useRef(null);
+  const DEBOUNCE_DELAY_MS = 500;
 
   // const apiKey = '8ea653b364ac40b88c00fc4708d75c22'; // Replace with your OpenCage Geocode API key
   const apiKey = 'af6568ed15b84753b5466384264d86ab';
@@ -66,19 +69,44 @@ export const Booking = () => {
     }
   };
 
-  const handleInputChange = (e, setInput, setSuggestions, setCoordinates) => {
+  const handleInputChange = (e, setInput, setSuggestions, debounceRef) => {
     const value = e.target.value;
     setInput(value);
-    fetchSuggestions(value, setSuggestions);
-    fetchCoordinates(value, setCoordinates);
+
+    if (debounceRef.current) {
+      clearTimeout(debounceRef.current);
+    }
+
+    if (value.trim() === '') {
+      setSuggestions([]);
+      return;
+    }
+
+    debounceRef.current = setTimeout(() => {
+      fetchSuggestions(value, setSuggestions);
+    }, DEBOUNCE_DELAY_MS);
   };
 
   useEffect(() => {
-    fetchCoordinates(origin, setOriginCoordinates);
+    if (!origin.trim()) {
+      setOriginCoordinates(null);
+      return;
+    }
+    const timer = setTimeout(() => {
+      fetchCoordinates(origin, setOriginCoordinates);
+    }, DEBOUNCE_DELAY_MS);
+    return () => clearTimeout(timer);
   }, [origin]);
 
   useEffect(() => {
-    fetchCoordinates(destination, setDestinationCoordinates);
+    if (!destination.trim()) {
+      setDestinationCoordinates(null);
+      return;
+    }
+    const timer = setTimeout(() => {
+      fetchCoordinates(destination, setDestinationCoordinates);
+    }, DEBOUNCE_DELAY_MS);
+    return () => clearTimeout(timer);
   }, [destination]);
 
   // const loc=()=>{
@@ -173,7 +201,7 @@ export const Booking = () => {
                             id="origin"
                             value={origin}
                             onChange={(e) =>
-                              handleInputChange(e, setOrigin, setOriginSuggestions, setOriginCoordinates)
+                              handleInputChange(e, setOrigin, setOriginSuggestions, originSuggestionsDebounceRef)
                             }
                             className="w-[15rem] focus:outline-none text-black border-b-2 border-gray-300 focus:border-primary-color h-8"
                           />
@@ -216,7 +244,7 @@ export const Booking = () => {
                                 e,
                                 setDestination,
                                 setDestinationSuggestions,
-                                setDestinationCoordinates
+                                destinationSuggestionsDebounceRef
                               )
                             }
                             className="w-[15rem] text-gray-700 border-b-2 border-gray-300 focus:outline-none focus:border-red-500 h-8"
